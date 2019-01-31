@@ -10,7 +10,7 @@ defmodule CryptoPrices.Aggregator.Kraken do
   end
 
   defp format_results({:ok, %{ "result" => result }}, pair) do
-    result[convert_pair(pair)]["bids"]
+    result[convert_pair(pair)]["asks"]
     |> Enum.map(&build_bid/1)
   end
 

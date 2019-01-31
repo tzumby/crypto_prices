@@ -9,8 +9,8 @@ defmodule CryptoPrices.Aggregator.Poloniex do
     |> format_results()
   end
 
-  defp format_results({:ok, %{ "bids" => bids }}) do
-    bids
+  defp format_results({:ok, %{ "asks" => asks }}) do
+    asks
     |> Enum.map(&build_bid/1)
   end
 

@@ -8,8 +8,8 @@ defmodule CryptoPrices.Aggregator.Bittrex do
     |> format_results()
   end
 
-  defp format_results({:ok, %{ "result" => %{ "sell" => sell  }}}) do
-    sell
+  defp format_results({:ok, %{ "result" => %{ "buy" => buy  }}}) do
+    buy
     |> Enum.map(&build_bid/1)
     |> Enum.take(@limit)
   end
