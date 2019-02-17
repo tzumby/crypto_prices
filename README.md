@@ -1,6 +1,6 @@
 # CryptoPrices
 
-**TODO: Add description**
+This repo is just a sample for an article I wrote about [OTP and API calls](https://medium.com/@tzumby/using-elixir-and-otp-for-external-api-calls-f1ce80a5d585)
 
 ## Installation
 
